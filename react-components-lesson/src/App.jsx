@@ -12,18 +12,21 @@ const App = () => {
     {
       name: "Elizabeth Holmes",
       title: "CEO",
+      company: "Razor",
       credential: "MBA from SuperLegit University",
       id: 1,
     },
     {
       name: "Sam Bankman-Fried",
       title: "CFO",
+      company: "Toyota",
       credential: "CPA from TotallyReal State",
       id: 2,
     },
     {
       name: "Matt Damon",
       title: "CMO",
+      company: "Hollywood",
       credential: "Was in that movie you saw",
       id: 3,
     },
@@ -44,8 +47,12 @@ const App = () => {
             // These keys are using dot notation from getting the array from `founders`, but in order to achieve this.
             // We are using `.map(variableName)` to get this information
             key={founder.id}
-            name={founder.name}
-            title={founder.title}
+            // name={founder.name}
+            // title={founder.title}
+            // credential={founder.credential}
+            // This above is great but when we have to many properties it would be difficult to debug as well so the other method of cleaning this up
+            // Is passing the ENTIRE function/variable
+            founder={founder}
           />
           // <FounderListItem
           //   name="Pedro Cruz"
