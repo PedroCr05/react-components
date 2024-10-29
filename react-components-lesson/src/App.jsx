@@ -16,14 +16,12 @@ const App = () => {
       <h2>Our Founders</h2>
       <ul>
         <FounderListItem name="Elizabeth Holmes" title="CEO" company="Razor" />
-        <li>
-          <h3>Sam Bankman-Fried: CFO</h3>
-          <p>CPA from TotallyReal State</p>
-        </li>
-        <li>
-          <h3>Matt Damon: CMO</h3>
-          <p>Was in that Movie You saw</p>
-        </li>
+        <FounderListItem
+          name="Sam Bankman-Fried"
+          title="CFO"
+          company="Toyota"
+        />
+        <FounderListItem name="Matt Damon" title="CMO" company="Hollywood" />
       </ul>
     </>
   );
